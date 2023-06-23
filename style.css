@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --primary_c : #e63c08;
+}
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img6.jpg) center / cover;
+    /* background-size: cover;
+    background-position: center; */
+    /* background: linear-gradient(to bottom right, orange, red); */
+    /* background: blue; */
+}
+
+.form-holder {
+    height: fit-content;
+    width: 500px;
+    border: 2px solid #e5e5e546;
+    padding: 10px;
+    border-radius: 20px;
+    background: #ffffff4d;
+    backdrop-filter:  blur(10px);
+}
+
+.form-header {
+    padding: 20px 0;
+    font-size: 40px;
+    color: var(--primary_c);
+}
+
+.main-form {
+    height: fit-content;
+    width: fit-content;
+
+}
+
+.name, 
+.email, 
+.password {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.name label, 
+.email label, 
+.password label {
+    font-size: 17px;
+    font-weight: bold;
+    transform: translateY(-10px);
+    color: #666565;
+}
+
+
+.name input, 
+.email input, 
+.password input {
+    height: 40px;
+    width: 450px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.208);
+}
+
+.btn-holder {
+    padding: 20px 0;
+    position: relative;
+}
+
+.btn-holder button {
+    height: 40px;
+    width: 150px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: var(--primary_c);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-holder a {
+    color: black;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+.links-holder {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links-holder a {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #ffffff3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.links-holder a:nth-of-type(1) i {
+    background: linear-gradient(to bottom, red, yellow, blue, green);
+    -webkit-background-clip: text;
+    color: #00000000;
+}
+
+.links-holder a:nth-of-type(2) i {
+    color: rgb(0, 98, 255);
+}
+
+.links-holder a:nth-of-type(3) i {
+    color: #0ab7b7;
+}
+
+
